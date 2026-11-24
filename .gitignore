@@ -1,0 +1,35 @@
+# Dependencies
+node_modules/
+
+# Build & cache outputs
+dist/
+.vite/
+coverage/
+
+# Environment variables (ignore all real env files, allow templates)
+.env
+.env.local
+.env.*
+!.env.example
+
+# Private keys & certificates (e.g., AWS EC2 .pem key pairs)
+*.pem
+*.key
+*.ppk
+*.crt
+
+# Local Docker overrides
+docker-compose.override.yml
+
+# Logs, IDE & OS files
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Demo recordings (avoid pushing large videos)
+*.mp4
+*.mkv
+*.mov
